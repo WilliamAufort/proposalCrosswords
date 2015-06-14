@@ -20,6 +20,16 @@ Les mots croisés sont un jeu de lettres connu dans le monde entier. L'objectif 
 
 On trouve essentiellement les mots croisés dans les journaux et revues. Certains de ces journaux proposent également de pouvoir y jouer sur leur site internet\footnote{Citons par exemple Metronews et 20 Minutes.}.
 
+\section{Résolution}
+
+Actuellement, on ne trouve pas de solveurs de mots croisés à proprement parlé. Certains sites internet proposent de trouver un mot à partir des lettres déjà trouvées, d'autres cherchent également avec une définition. Dans le premier cas, il est facile de faire le rapprochement avec le domaine de l'algorithmique de mots (recherche de mots dans un dictionnaire par exemple). Pour le deuxième cas, la tâche s'annonce plus délicate. Si la définition est réduite à un mot, on peut chercher un synonymes. Dans le cas d'énigmes plus complexes, relevant des fois du jeu de mots (par exemple "Grant ennemi" pour désigner LEE, général durant la Guerre de Sécession). On voit également par ailleurs que le champ d'investigation des mots croisés ne se limite pas au vocabulaire de la langue française, mais également à l'histoire, au cinéma, à la littérature, etc.
+
+En 1999, \cite{proverb} propose une approche probabiliste intéressante de résolution de mots croisés utilisant une base de données de mots-croisés. L'idée est d'utiliser différentes approches pour deviner un mot. Chaque approche renvoyant un mot et une probabilité de succès, ces résultats sont ensuite combinés pour résoudre l'énigme.
+
+Plus récemment, \cite{GCV} propose une approche pour résoudre des mots croisés en utilisant l'API Google pour deviner les mots à partir des définitions.
+
+Un objectif, certes un peu large, de ce projet pourrait être l'étude d'autres approches pour résoudre ce genre de problèmes.
+
 \section{Conception}
 
 Si résoudre une grille de mots croisés est un exercice parfois difficile, en fabriquer est beaucoup plus délicat. Aujourd'hui, les verbicrusistes utilisent pour la plupart des dictionnaires de mots croisés, ainsi que d'autres outils, comme des dictionnaires électroniques, pour pouvoir combler les lettres manquantes. L'aspect de la grille est également important (pas trop de cases noires, de préférence bien réparties, grille symétrique...). L'ultime étape de la recherche des définitions est certainement la plus périlleuse : elles ne doivent pas être ni trop simple, ni trop compliquées, dans le but de distraire pleinement les joueurs.
@@ -35,6 +45,7 @@ Même si la conception de mots croisés a été assez bien explorée, la recherc
 	% TODO Des idées générales pour faire cela?
 	% TODO D'autres idées ?
 \end{itemize}
+
 
 \nocite{*}
 
