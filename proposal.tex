@@ -1,18 +1,40 @@
 \documentclass{article}
 
+\usepackage[francais]{babel}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{hyperref}
 \usepackage{graphics}
 
-\title{Crossword Solver/Interface : Proposal}
+\title{Proposition de projet: Autour des mots croisés}
 \author{}
 \date{\today}
 
 \begin{document}
 
 \maketitle
+
+Les mots croisés sont un jeu de lettres connu dans le monde entier. L'objectif est de retrouver tous les mots dans une grille grâce aux définition données, ces mots pouvant être placés horizontalement ou verticalement.
+
+On trouve essentiellement les mots croisés dans les journaux et revues. Certains de ces journaux proposent également de pouvoir y jouer sur leur site internet\footnote{Citons par exemple Metronews et 20 Minutes.}.
+
+\section{Conception}
+
+Si résoudre une grille de mots croisés est un exercice parfois difficile, en fabriquer est beaucoup plus délicat. Aujourd'hui, les verbicrusistes utilisent pour la plupart des dictionnaires de mots croisés, ainsi que d'autres outils, comme des dictionnaires électroniques, pour pouvoir combler les lettres manquantes. L'aspect de la grille est également important (pas trop de cases noires, de préférence bien réparties, grille symétrique...). L'ultime étape de la recherche des définitions est certainement la plus périlleuse : elles ne doivent pas être ni trop simple, ni trop compliquées, dans le but de distraire pleinement les joueurs.
+
+Quelques logiciels et sites internet existent pour construire soi-même des grilles de mots croisés. Certains se contentent de remplir une grille donnée avec des mots choisis au hasard (via backtracking notamment), mais ne fournissent pas de définitions. D'autres demandent à l'utilisateur de fournir une liste de mots et de définitions.
+
+Même si la conception de mots croisés a été assez bien explorée, la recherche de définitions reste souvent la tâche du concepteur de mots croisés. Un projet autour des mots croisés pourrait porter autour d'un logiciel créant une grille de mots croisés avec une liste de définitions associées. Quelques suggestions :
+
+\begin{itemize}
+	\item Commencer par associer comme définition un synonyme du mot à deviner.
+	\item Des mots croisés "à thèmes" : une certaine proportion des mots à deviner pourrait faire partie d'un thème choisi suffisamment large.
+	\item Des techniques plus originales de recherches de définitions, notamment de définitions pouvant avoir plusieurs interprétations, susceptible d'induire le lecteur dans une mauvaise piste. % par exemple: "Refaire le ménage" --> REMARIER
+	% TODO Des idées générales pour faire cela?
+	% TODO D'autres idées ?
+\end{itemize}
 
 \nocite{*}
 
