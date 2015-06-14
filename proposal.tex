@@ -22,7 +22,7 @@ Ce domaine peut donner lieu à des projets originaux, pouvant être divisés en 
 
 \section{Résolution}
 
-Actuellement, on ne trouve pas de solveurs de mots croisés à proprement parlé. Certains sites internet proposent de trouver un mot à partir des lettres déjà trouvées, d'autres cherchent également avec une définition. Dans le premier cas, il est facile de faire le rapprochement avec le domaine de l'algorithmique de mots (recherche de mots dans un dictionnaire par exemple). Pour le deuxième cas, la tâche s'annonce plus délicate. Si la définition est réduite à un mot, on peut essayer de rechercher un synonymes. Dans le cas d'énigmes plus complexes, relevant du jeu de mots (par exemple "Grant ennemi" pour désigner LEE, général durant la Guerre de Sécession) ou jouant sur le sens des mots (REMARIER ayant comme définition "refaire le ménage"), la recherche de synonymes peut ne pas suffire. On voit également que le champ d'investigation des mots croisés ne se limite pas seulement au vocabulaire de la langue française, mais s'étend également à l'histoire, au cinéma, à la littérature, etc.
+Actuellement, on ne trouve pas de solveurs de mots croisés à proprement parlé. Certains sites internet proposent de trouver un mot à partir des lettres déjà trouvées, d'autres cherchent également avec une définition. Dans le premier cas, il est facile de faire le rapprochement avec le domaine de l'algorithmique de mots (recherche de mots dans un dictionnaire par exemple). Pour le deuxième cas, la tâche s'annonce plus délicate. Si la définition est réduite à un mot, on peut essayer de rechercher un synonymes. Dans le cas d'énigmes plus complexes, relevant du jeu de mots (par exemple <<~Grant ennemi~>> pour désigner LEE, général durant la Guerre de Sécession) ou jouant sur le sens des mots (REMARIER ayant comme définition <<~refaire le ménage~>>), la recherche de synonymes peut ne pas suffire. On voit également que le champ d'investigation des mots croisés ne se limite pas seulement au vocabulaire de la langue française, mais s'étend également à l'histoire, au cinéma, à la littérature, etc.
 
 En 1999, \cite{proverb} propose une approche probabiliste intéressante de résolution de mots croisés utilisant une base de données de mots-croisés. L'idée est d'utiliser différentes approches pour deviner un mot. Chaque approche renvoyant un mot et une probabilité de succès, ces résultats sont ensuite combinés pour résoudre l'énigme.
 
@@ -34,7 +34,7 @@ Un objectif, certes un peu large, de ce projet (qui ressemblerai davantage à un
 
 Si résoudre une grille de mots croisés est un exercice parfois difficile, en fabriquer est beaucoup plus délicat. Aujourd'hui, les verbicrusistes utilisent pour la plupart des dictionnaires de mots croisés, ainsi que d'autres outils, comme des dictionnaires électroniques, pour pouvoir combler les lettres manquantes. L'aspect de la grille est également important (pas trop de cases noires, de préférence bien réparties, grille symétrique...). L'ultime étape de la recherche des définitions est certainement la plus périlleuse : elles ne doivent pas être ni trop simple, ni trop compliquées, dans le but de distraire pleinement les joueurs.
 
-Quelques logiciels et sites internet existent pour construire soi-même des grilles de mots croisés. Certains se contentent de remplir une grille donnée avec des mots choisis au hasard (via backtracking notamment), mais ne fournissent pas de définitions. D'autres demandent à l'utilisateur de fournir une liste de mots et de définitions.
+Quelques logiciels et sites internet existent pour construire soi-même des grilles de mots croisés. Certains se contentent de remplir une grille donnée avec des mots choisis au hasard (via backtracking notamment), mais ne fournissent pas de définitions. D'autres demandent à l'utilisateur de fournir une liste de mots et de définitions. Dans tous les cas, le problème associé est NP-Complet \cite{NP-complete}, mais n'en reste pas moins un problème intéressant.
 
 Même si la conception de mots croisés a été assez bien explorée, la recherche de définitions reste souvent la tâche du concepteur de mots croisés. Un projet autour des mots croisés pourrait porter autour d'un logiciel créant une grille de mots croisés avec une liste de définitions associées. Quelques suggestions :
 
@@ -46,7 +46,7 @@ Même si la conception de mots croisés a été assez bien explorée, la recherc
 
 \section{Interface de jeu}
 
-On trouve essentiellement les mots croisés dans les journaux et revues. Certains de ces journaux proposent également de pouvoir y jouer sur leur site internet\footnote{Citons par exemple Metronews et 20 Minutes}. Dans ces versions, contrairement à ce qu'il se fait sur papier, dès qu'un mot rempli est correct, il apparaît clairement dans la grille, offrant ainsi une certaine assurance au joueur, chose n'apparaissant évidemment pas sur la version papier.
+On trouve essentiellement les mots croisés dans les journaux et revues. Certains de ces journaux proposent également de pouvoir y jouer sur leur site internet (par exemple Metronews et 20 Minutes). Dans ces versions, contrairement à ce qu'il se fait sur papier, dès qu'un mot rempli est correct, il apparaît clairement dans la grille, offrant ainsi une certaine assurance au joueur, chose n'apparaissant évidemment pas sur la version papier.
 
 Cependant il n'est pas possible de jouer à plusieurs joueurs sur ces applications, les mots croisés se jouant souvent à plusieurs. La création d'une interface multijoueur à travers internet pourrait être un projet intéressant. Deux grands modes de jeux s'imposent : un mode coopératif ou compétitif.
 
@@ -54,7 +54,7 @@ Dans ces deux modes, on peut imaginer différentes possibilités de jeux : limit
 
 \section{Conclusion}
 
-L'objectif de ce papier était de montrer que les possibilités d'un projet (de nature plus logicielle ou plus orienté recherche) autour de l'univers des mots croisés sont importantes , notamment en vue du projet intégré de l'année prochaine si les idées vous manquent.
+L'objectif de ce papier était de montrer que les possibilités d'un projet (de nature plus logicielle ou plus orienté recherche) autour de l'univers des mots croisés sont importantes, notamment en vue du projet intégré de l'année prochaine, si les idées vous manquent et/ou que ce projet vous intéresse.
 
 \bibliographystyle{plain}
 \bibliography{proposal}
