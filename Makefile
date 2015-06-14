@@ -13,7 +13,7 @@ proposal.ps: proposal.dvi
 
 proposal.dvi: proposal.tex proposal.bib
 	$(TEX) proposal.tex
-	$(BIB) proposal
+	$(BIB) proposal.aux
 	$(TEX) proposal.tex
 	$(TEX) proposal.tex
 
