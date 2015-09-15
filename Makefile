@@ -20,7 +20,7 @@ proposal.dvi: proposal.tex proposal.bib
 .PHONY: clean mrproper
 
 clean:
-	@rm -f *.bbl *.dvi *.log *.ps *.aux *.blg *.out
+	@rm -f *.bbl *.dvi *.log *.ps *.aux *.blg *.out *~
 
 mrproper: clean
 	@rm -f proposal.pdf
